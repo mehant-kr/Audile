@@ -13,7 +13,7 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with BlackHole.  If not, see <http://www.gnu.org/licenses/>.
- * 
+ * #FB8C00
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
@@ -21,21 +21,21 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:audio_service/audio_service.dart';
-import 'package:blackhole/Helpers/config.dart';
-import 'package:blackhole/Helpers/handle_native.dart';
-import 'package:blackhole/Helpers/route_handler.dart';
-import 'package:blackhole/Screens/About/about.dart';
-import 'package:blackhole/Screens/Home/home.dart';
-import 'package:blackhole/Screens/Library/downloads.dart';
-import 'package:blackhole/Screens/Library/nowplaying.dart';
-import 'package:blackhole/Screens/Library/playlists.dart';
-import 'package:blackhole/Screens/Library/recent.dart';
-import 'package:blackhole/Screens/Login/auth.dart';
-import 'package:blackhole/Screens/Login/pref.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
-import 'package:blackhole/Services/audio_service.dart';
-import 'package:blackhole/theme/app_theme.dart';
+import 'package:audile/Helpers/config.dart';
+import 'package:audile/Helpers/handle_native.dart';
+import 'package:audile/Helpers/route_handler.dart';
+import 'package:audile/Screens/About/about.dart';
+import 'package:audile/Screens/Home/home.dart';
+import 'package:audile/Screens/Library/downloads.dart';
+import 'package:audile/Screens/Library/nowplaying.dart';
+import 'package:audile/Screens/Library/playlists.dart';
+import 'package:audile/Screens/Library/recent.dart';
+import 'package:audile/Screens/Login/auth.dart';
+import 'package:audile/Screens/Login/pref.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
+import 'package:audile/Screens/Settings/setting.dart';
+import 'package:audile/Services/audio_service.dart';
+import 'package:audile/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -51,7 +51,7 @@ Future<void> main() async {
   Paint.enableDithering = true;
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-    await Hive.initFlutter('BlackHole');
+    await Hive.initFlutter('Audile');
   } else {
     await Hive.initFlutter();
   }
@@ -89,8 +89,8 @@ Future<void> startService() async {
   final AudioPlayerHandler audioHandler = await AudioService.init(
     builder: () => AudioPlayerHandlerImpl(),
     config: AudioServiceConfig(
-      androidNotificationChannelId: 'com.shadow.blackhole.channel.audio',
-      androidNotificationChannelName: 'BlackHole',
+      androidNotificationChannelId: 'com.shadow.audile.channel.audio',
+      androidNotificationChannelName: 'Audile',
       androidNotificationOngoing: true,
       androidNotificationIcon: 'drawable/ic_stat_music_note',
       androidShowNotificationBadge: true,
@@ -110,8 +110,8 @@ Future<void> openHiveBox(String boxName, {bool limit = false}) async {
     File dbFile = File('$dirPath/$boxName.hive');
     File lockFile = File('$dirPath/$boxName.lock');
     if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-      dbFile = File('$dirPath/BlackHole/$boxName.hive');
-      lockFile = File('$dirPath/BlackHole/$boxName.lock');
+      dbFile = File('$dirPath/audile/$boxName.hive');
+      lockFile = File('$dirPath/audile/$boxName.lock');
     }
     await dbFile.delete();
     await lockFile.delete();
@@ -229,8 +229,8 @@ class _MyAppState extends State<MyApp> {
     ]);
 
     return MaterialApp(
-      title: 'BlackHole',
-      restorationScopeId: 'blackhole',
+      title: 'Audile',
+      restorationScopeId: 'audile',
       debugShowCheckedModeBanner: false,
       themeMode: AppTheme.themeMode,
       theme: AppTheme.lightTheme(

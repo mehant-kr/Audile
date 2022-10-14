@@ -19,8 +19,8 @@
 
 import 'dart:io';
 
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
+import 'package:audile/Helpers/audio_query.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

@@ -17,10 +17,10 @@
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
+import 'package:audile/APIs/api.dart';
+import 'package:audile/Helpers/audio_query.dart';
+import 'package:audile/Screens/Common/song_list.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
 import 'package:flutter/material.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 

@@ -17,9 +17,9 @@
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:audile/CustomWidgets/like_button.dart';
+import 'package:audile/CustomWidgets/on_hover.dart';
+import 'package:audile/CustomWidgets/song_tile_trailing_menu.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

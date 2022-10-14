@@ -17,10 +17,10 @@
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/LocalMusic/downed_songs.dart';
+import 'package:audile/CustomWidgets/snackbar.dart';
+import 'package:audile/CustomWidgets/textinput_dialog.dart';
+import 'package:audile/Helpers/audio_query.dart';
+import 'package:audile/Screens/LocalMusic/downed_songs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:on_audio_query/on_audio_query.dart';

@@ -17,20 +17,20 @@
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/download_button.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/search_bar.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Screens/Search/albums.dart';
-import 'package:blackhole/Screens/Search/artists.dart';
+import 'package:audile/APIs/api.dart';
+import 'package:audile/CustomWidgets/copy_clipboard.dart';
+import 'package:audile/CustomWidgets/download_button.dart';
+import 'package:audile/CustomWidgets/empty_screen.dart';
+import 'package:audile/CustomWidgets/gradient_containers.dart';
+import 'package:audile/CustomWidgets/like_button.dart';
+import 'package:audile/CustomWidgets/miniplayer.dart';
+import 'package:audile/CustomWidgets/search_bar.dart';
+import 'package:audile/CustomWidgets/snackbar.dart';
+import 'package:audile/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:audile/Screens/Common/song_list.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
+import 'package:audile/Screens/Search/albums.dart';
+import 'package:audile/Screens/Search/artists.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

@@ -19,10 +19,10 @@
 
 import 'dart:convert';
 
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
+import 'package:audile/CustomWidgets/custom_physics.dart';
+import 'package:audile/CustomWidgets/empty_screen.dart';
 // import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Screens/Search/search.dart';
+import 'package:audile/Screens/Search/search.dart';
 // import 'package:blackhole/Screens/Settings/setting.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';

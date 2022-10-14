@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shadow.blackhole">
+    package="com.shadow.audile">
    <application
-        android:label="BlackHole"
+        android:label="Audile"
         android:requestLegacyExternalStorage="true"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name="com.ryanheise.audioservice.AudioServiceActivity"
             android:launchMode="singleTask"
@@ -44,7 +44,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="app" android:host="blackhole" android:pathPrefix="/auth" />
+                <data android:scheme="app" android:host="audile" android:pathPrefix="/auth" />
             </intent-filter>
 
             <intent-filter android:autoVerify="true">

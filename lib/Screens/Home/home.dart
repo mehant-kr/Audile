@@ -20,23 +20,23 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/downloads_checker.dart';
-import 'package:blackhole/Helpers/extensions.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart';
-import 'package:blackhole/Screens/Library/library.dart';
-import 'package:blackhole/Screens/LocalMusic/downed_songs.dart';
-import 'package:blackhole/Screens/Search/search.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
-import 'package:blackhole/Screens/Top Charts/top.dart';
-import 'package:blackhole/Screens/YouTube/youtube_home.dart';
-import 'package:blackhole/Services/ext_storage_provider.dart';
+import 'package:audile/CustomWidgets/custom_physics.dart';
+import 'package:audile/CustomWidgets/gradient_containers.dart';
+import 'package:audile/CustomWidgets/miniplayer.dart';
+import 'package:audile/CustomWidgets/snackbar.dart';
+import 'package:audile/CustomWidgets/textinput_dialog.dart';
+import 'package:audile/Helpers/backup_restore.dart';
+import 'package:audile/Helpers/downloads_checker.dart';
+import 'package:audile/Helpers/extensions.dart';
+import 'package:audile/Helpers/supabase.dart';
+import 'package:audile/Screens/Home/saavn.dart';
+import 'package:audile/Screens/Library/library.dart';
+import 'package:audile/Screens/LocalMusic/downed_songs.dart';
+import 'package:audile/Screens/Search/search.dart';
+import 'package:audile/Screens/Settings/setting.dart';
+import 'package:audile/Screens/Top Charts/top.dart';
+import 'package:audile/Screens/YouTube/youtube_home.dart';
+import 'package:audile/Services/ext_storage_provider.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -236,7 +236,7 @@ class _HomePageState extends State<HomePage> {
           ) as String;
           if (autoBackPath == '') {
             ExtStorageProvider.getExtStorage(
-              dirName: 'BlackHole/Backups',
+              dirName: 'audile/Backups',
             ).then((value) {
               Hive.box('settings').put('autoBackPath', value);
               createBackup(

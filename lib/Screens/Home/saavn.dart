@@ -19,19 +19,19 @@
 
 import 'dart:io';
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/CustomWidgets/collage.dart';
-import 'package:blackhole/CustomWidgets/horizontal_albumlist.dart';
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Helpers/extensions.dart';
-import 'package:blackhole/Helpers/format.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Library/liked.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Screens/Search/artists.dart';
+import 'package:audile/APIs/api.dart';
+import 'package:audile/CustomWidgets/collage.dart';
+import 'package:audile/CustomWidgets/horizontal_albumlist.dart';
+import 'package:audile/CustomWidgets/like_button.dart';
+import 'package:audile/CustomWidgets/on_hover.dart';
+import 'package:audile/CustomWidgets/snackbar.dart';
+import 'package:audile/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:audile/Helpers/extensions.dart';
+import 'package:audile/Helpers/format.dart';
+import 'package:audile/Screens/Common/song_list.dart';
+import 'package:audile/Screens/Library/liked.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
+import 'package:audile/Screens/Search/artists.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

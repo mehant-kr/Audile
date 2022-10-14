@@ -18,15 +18,15 @@
  */
 
 import 'package:app_links/app_links.dart';
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/APIs/spotify_api.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/import_export_playlist.dart';
-import 'package:blackhole/Helpers/playlist.dart';
-import 'package:blackhole/Helpers/search_add_playlist.dart';
+import 'package:audile/APIs/api.dart';
+import 'package:audile/APIs/spotify_api.dart';
+import 'package:audile/CustomWidgets/gradient_containers.dart';
+import 'package:audile/CustomWidgets/miniplayer.dart';
+import 'package:audile/CustomWidgets/snackbar.dart';
+import 'package:audile/CustomWidgets/textinput_dialog.dart';
+import 'package:audile/Helpers/import_export_playlist.dart';
+import 'package:audile/Helpers/playlist.dart';
+import 'package:audile/Helpers/search_add_playlist.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

@@ -17,13 +17,13 @@
  * Copyright (c) 2021-2022, Ankit Sangwan
  */
 
-import 'package:blackhole/CustomWidgets/bouncy_sliver_scroll_view.dart';
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Services/youtube_services.dart';
+import 'package:audile/CustomWidgets/bouncy_sliver_scroll_view.dart';
+import 'package:audile/CustomWidgets/copy_clipboard.dart';
+import 'package:audile/CustomWidgets/gradient_containers.dart';
+import 'package:audile/CustomWidgets/miniplayer.dart';
+import 'package:audile/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:audile/Screens/Player/audioplayer.dart';
+import 'package:audile/Services/youtube_services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
